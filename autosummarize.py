@@ -7,7 +7,7 @@ transcript = transcriber.transcribe("https://storage.googleapis.com/aai-web-samp
 if transcript.error:
   raise Exception(f'Transcription error: {transcript.error}')
 
-context = "A GitLab meeting to discuss logistics"
+context = "An episode of the Lex Fridman podcast, in which he speaks with Guido van Rossum, the creator of the Python programming language"
 
 answer_format = '''**<topic header>**
 <topic summary>
